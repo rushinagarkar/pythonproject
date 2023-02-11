@@ -132,3 +132,5 @@ dmypy.json
 /main.py
 /venv
 /.idea
+/.DS_Store
+/images

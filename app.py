@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 driverPath = "./chromedriver"
-searchString = "car"
+searchString = input()
 numbersOfImage = 10
 targetPath = "./images"
 
@@ -44,7 +44,7 @@ def fetchImagesUrls(searchString, numberOfImages, wd, sleepBetweenInteractions: 
                 print(f"Found: {imageCount} image links, done!")
                 break
         else:
-            print(f"Found {imageCount} image links, looking foe more...")
+            print(f"Found {imageCount} image links, looking for more...")
             time.sleep(30)
             return
             # loadMoreImages = wd.find_elements_by_css_selector(".mye4qd")
